@@ -1,0 +1,69 @@
+.form-user{
+    background-color: rgba(0, 0, 0, 0.671);
+    color: rgba(255, 255, 255, 0.7) !important;
+    padding: 8px;
+}
+.config-input-radio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    height: 40px;
+    margin: 8px 0;
+    background-color: transparent;
+    padding: 0 8px;
+}
+.config-input,.config-button{
+    background-color: transparent;
+    height: 40px;
+    margin: 8px 0;
+}
+.config-input input{
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    padding-left: 8px;
+    font-size: 20px;
+    color: currentColor;
+}
+button.btn{
+    outline: 0;
+    border: 0;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+    height: 40px;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: all .5s linear;
+}
+button.btn-darck{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.7);
+}
+button.btn-darck:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+button.btn-darck,
+.config-input,
+.form-user,
+.config-input-photo,
+.config-input-radio{
+    border-radius: 8px;
+}
+.config-input,
+.config-input-photo,
+.config-input-radio{
+    border: 2px solid currentColor;
+}
+.config-input-photo{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin: 8px 0;
+    padding: 0 8px;
+}
