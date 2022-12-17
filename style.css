@@ -1,3 +1,80 @@
+/*
+#   Criando menu amburg com css.
+#   Criar div com um spam e adiciona a classe open
+#   Adicionar a classe close para aparecer o menu de close para fechar
+#   Obs. para usar o menu amburg e nessesario ter uma span dentro da div
+#
+#   creating hamburger menu with css
+#   create div with spam and add open class
+#   add close class to show close menu to close obs to use amburg menu and need to have a span inside the div
+*/
+div.open,div.close{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+div.open span{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: blue;
+}
+div.open::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+}
+div.open::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: blue;
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+}
+div.close span{
+    display: none;
+}
+div.close::before{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: blue;
+    display: block;
+    position: absolute;
+    top: 50%;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    transform: rotate(-45deg);
+}
+div.close::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    transform: rotate(45deg);
+    background-color: blue;
+}
+
+/*Configuração de formulario*/
+
 .form-user{
     background-color: rgba(0, 0, 0, 0.671);
     color: rgba(255, 255, 255, 0.7) !important;
